@@ -1,0 +1,50 @@
+.background1{
+	background-color: #e6e6e6;
+	height: 620px;
+	margin:0 auto;
+}
+
+
+.buttons{
+	margin-left:161px;
+}
+
+.text1{
+	background-color: #264159;
+	border-color: black;
+	border-width: 1px;
+	height: 100px;
+	width: 360px;
+	margin-left:161px;
+	margin-top: 40px;
+	color:white;
+	font-size: 25px;
+}
+
+.text2{
+	border-color: black;
+	border-width: 1px;
+	background-color: white;
+	height: 90px;
+	width: 90px;
+	font-size: 25px;
+}
+
+.text3{
+	margin-left:161px;
+	background-color: #b3b3b3;
+	border-color: black;
+	border-width: 1px;
+	height: 80px;
+	width: 360px;
+	font-size: 25px;
+}
+
+.text4{
+	border-color: black;
+	border-width: 1px;
+	background-color: #ff884d;
+	height: 90px;
+	width: 90px;
+	font-size: 25px;
+}

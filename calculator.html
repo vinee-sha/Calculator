@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<div class="col-md-6 background1">
+		<div class="row">
+			<input type="text" class="text1" name="texts">
+		</div>
+		<div class="row">
+			<div class="column buttons">	
+				<input type="button" class="text2" value="7" onclick="updateValue(7)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="8" onclick="updateValue(8)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="9" onclick="updateValue(9)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text4" value="X" onclick="updateValue('*')">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column buttons">	
+				<input type="button" class="text2" value="4" onclick="updateValue(4)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="5" onclick="updateValue(5)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="6" onclick="updateValue(6)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text4" value="-" onclick="updateValue('-')">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column buttons">	
+				<input type="button" class="text2" value="1" onclick="updateValue(1)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="2" onclick="updateValue(2)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="3" onclick="updateValue(3)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text4" value="+" onclick="updateValue('+')">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column buttons">	
+				<input type="button" class="text2" value="0" onclick="updateValue(0)">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="." onclick="updateValue('.')">
+			</div>
+			<div class="column">	
+				<input type="button" class="text2" value="=" onclick="showValue()">
+			</div>
+			<div class="column">	
+				<input type="button" class="text4" value="/" onclick="updateValue('/')">
+			</div>
+		</div>
+		<div class="row">
+			<input type="submit" class="text3" value="Clear" onclick="clearValue()">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function updateValue(a) {
+			document.getElementsByName('texts')[0].value += a;
+		}
+
+		function showValue() {
+			var a = document.getElementsByName('texts')[0].value;
+			var b = eval(a);
+			document.getElementsByName('texts')[0].value = b;
+		}
+
+		function clearValue() {
+			document.getElementsByName('texts')[0].value = "";	
+		}
+	</script>
+</body>
+</html>
